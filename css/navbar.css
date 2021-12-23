@@ -1,0 +1,48 @@
+.nav-enlace{
+    background: salmon;
+    color: wheat;
+    padding: 10px 30px;
+    display: inline-block;
+    /* Elimina las rayas de debajo del enlace y otras decoraciones */
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-enlace:hover{
+    background: violet;
+}
+/* Pone estas propiedades a todo el bloque */
+nav{
+    background: yellowgreen;
+    padding: 10px;
+    /* Es necesario para trabajar con flex declararlo primero */
+    display: flex;
+    /* Distribuye el contenido por el bloque */
+    justify-content: flex-end;
+    /* Otras opciones son center, space-between(Pegada a los amrgenes cone spacio entre ellas), space-arround(espacios entre los limites y ntre ellas), flex-end, */
+}
+.nav-button{
+    background: salmon;
+    color: wheat;
+    padding: 10px 0px;
+    /* Modificamos los bordes del botón, grosor del borde, tipo de linea, color. */
+    border: 2px solid white;
+    /* Hacemos que no se muestre por defecto. */
+    display: none;
+}
+
+    /* Esto hace que se modifique el display que pongamos en el interior cuando se cumplan las condiciones del interior */
+@media (max-width: 600px){
+    nav{
+        background: violet;
+        flex-direction: column;
+    }
+    .nav-button{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+    
+
+}
