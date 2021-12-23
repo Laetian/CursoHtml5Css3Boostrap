@@ -1,0 +1,63 @@
+h2{
+    color:red;
+    font-size: 14px;
+}
+h1{
+    /* color de la fuente */
+    color:rgb(0, 17, 255);
+    /* tamaño de fuente */
+    font-size: 100px;
+    /* Aplicar margenes */
+    margin-left: 50px;
+    /* Aplicar margen general */
+    margin: 100px;
+    /* Margen vertical / horizontal */
+    margin: 50px 50px;
+    /* Margen Arriba der abajo iz(Sentido horario) */
+    margin: 10px 20px 30px 40px;
+    /* Margen interno */
+    padding: 50px;
+    /* color bg */
+    background: red;
+}
+
+#tituloh1pequeno{
+    color:rgb(0, 26, 255);
+    font-size: 25px;
+}
+.yellow{
+    color:rgb(230, 189, 8);
+    font-size: 16px;
+}
+.bgdark{
+    background:rgb(22, 22, 26);
+}
+nav{
+    background: tomato;
+    padding: 30px;
+}
+.column{
+    background: violet;
+    color:yellowgreen;
+    /* Ancho que ocupa */
+    width: 25%;
+    padding: 25px;
+    margin: 25px;
+}
+.padre{
+    display: flex;
+}
+    /* botón por defecto */
+button{
+    background: violet;
+    color: turquoise;
+}
+    /* botón ratón encima */
+button:hover{
+    background: rgb(222, 238, 130);
+    color: rgb(224, 64, 64); 
+}
+button:active{
+    background: rgb(130, 238, 179);
+    color: rgb(80, 64, 224); 
+}
