@@ -1,0 +1,47 @@
+/* aplicamos la fuente en el css */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-weight: 700;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    width: 70%;
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin:10px;
+    padding: 10px;
+    /* Para redondear los bordes, a mayor radio mas redondeada */
+    border-radius: 25px;
+    /* para añadir sombras, información en https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+    /* Primer valor corresponde al eje x, segundo valor eje y, tercer valor (opcional) degradado de la sombra y cuarto valor color de la sombra */
+    box-shadow: 10px 10px 5px gray;
+}
+.precio{
+    font-size: 50px;
+    color: turquoise;
+}
+.btn-precio{
+    /* El ancla es un elemento de linea, entonces no ocupa todo el ancho, para convertirlo a elemento de bloque: */
+    display: block;
+    background: sandybrown;
+    padding: 10px;
+    /* Quitamos la linea que tiene el ancla por defecto */
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: white;
+}
+.btn-precio:hover{
+    background: rgb(177, 51, 51);
+}
