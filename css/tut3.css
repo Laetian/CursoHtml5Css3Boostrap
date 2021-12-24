@@ -8,9 +8,12 @@ h2{
 p{
     font-weight: 300;
 }
+.flex{
+    display: flex;
+    flex-wrap:wrap;
+}
 .container{
     width: 70%;
-    display: flex;
 }
 .text-center{
     text-align: center;
@@ -19,13 +22,16 @@ p{
     background: rgb(228, 228, 228);
     color: #333;
     border: 1px solid #333;
-    margin:10px;
+    margin:0px auto;
     padding: 10px;
     /* Para redondear los bordes, a mayor radio mas redondeada */
     border-radius: 25px;
     /* para añadir sombras, información en https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
     /* Primer valor corresponde al eje x, segundo valor eje y, tercer valor (opcional) degradado de la sombra y cuarto valor color de la sombra */
     box-shadow: 10px 10px 5px gray;
+    width: 22%;
+    /* Esta propiedad hace que el witdh tenga en cuenta el padding */
+    box-sizing: border-box;
 }
 .precio{
     font-size: 50px;
@@ -44,4 +50,16 @@ p{
 }
 .btn-precio:hover{
     background: rgb(177, 51, 51);
+}
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 650px){
+    .columna{
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
